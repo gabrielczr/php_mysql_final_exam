@@ -8,16 +8,16 @@ $errors = array();
 $order = '';
 if (isset($_GET['order']) && isset($_GET['column'])) {
 
-	if ($_GET['colum'] == 'lastname') {
+	if ($_GET['column'] == 'lastname') {
 		$order = 'ORDER BY lastname';
-	} elseif ($_GET['colum'] = 'firstname') {
+	} elseif ($_GET['column'] = 'firstname') {
 		$order = 'ORDER BY firstname';
-	} elseif ($_GET['colum'] == 'birthdate') {
+	} elseif ($_GET['column'] == 'birthdate') {
 		$order = ' ORDER BY birthdate';
 	}
-	if ($_GET['ordre'] == 'asc') {
+	if ($_GET['order'] == 'asc') {
 		$order .= 'ASC';
-	} elseif ($_GET['ordre'] == 'desc') {
+	} elseif ($_GET['order'] == 'desc') {
 		$order .= 'DESC';
 	}
 }
@@ -73,7 +73,7 @@ if ($queryUsers->execute()) {
 <html lang="en">
 
 <head>
-	<title>Exercice 1</title>
+	<title>Exercice 2</title>
 	<meta charset="utf-8">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 </head>
