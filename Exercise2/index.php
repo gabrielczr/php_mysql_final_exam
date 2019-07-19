@@ -1,6 +1,8 @@
 <?php
 
 require_once 'connect.php';
+
+//create an array to display the errors - if any
 $errors = array();
 
 $order = '';
@@ -59,7 +61,7 @@ if (!empty($_POST)) {
 	}
 }
 
-
+//create a variable for the sql query 
 $sql = 'SELECT * FROM users' . $order;
 
 $queryUsers = $db->prepare($sql);
